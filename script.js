@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const qr = new QRious({
     element: document.getElementById("qr-code"),
     size: 150,
-    value: "https://example.com/ticket" // QRコードで表示するURL
+    value: "https://necopagne.github.io/digital-ticket/" // QRコードで表示するURL
   });
 
   // 使用ボタンの処理
