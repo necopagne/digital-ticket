@@ -1,32 +1,58 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #f5f5dc; /* ベージュ背景 */
 }
 
 .ticket {
-  background: #ffffff;
+  background: #fff8dc; /* 薄いクリーム色 */
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #d4af37; /* ゴールドの点線 */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px;
+  width: 350px;
+  position: relative;
+}
+
+.ticket::before,
+.ticket::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff8dc;
+  border: 2px solid #d4af37;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticket::before {
+  left: -12px;
+}
+
+.ticket::after {
+  right: -12px;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
+  color: #d4af37; /* ゴールド */
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .notes {
   text-align: left;
   font-size: 14px;
   margin: 10px 0;
+  color: #333;
 }
 
 .notes li {
@@ -40,22 +66,24 @@ h1 {
 }
 
 .btn {
-  background-color: #007BFF;
-  color: #ffffff;
+  background-color: #d4af37; /* ゴールド */
+  color: #fff;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #c89b32; /* ダークゴールド */
 }
 
 .status {
   margin-top: 20px;
   font-size: 16px;
-  color: #007BFF;
+  color: #d4af37; /* ゴールド */
   font-weight: bold;
 }
