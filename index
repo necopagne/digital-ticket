@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MA-1 プレゼント券</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ticket">
+    <h1>MA-1 プレゼント券</h1>
+    <p>このチケットを使うと、以下の条件でMA-1を交換できます。</p>
+    <ul class="notes">
+      <li>値段は気にしないでください。</li>
+      <li>ほしいMA-1「1着」と交換できます。</li>
+      <li>使用期限は2025/12/15までです。</li>
+      <li>MA-1の色は「グレー」のみです。</li>
+      <li>返品、交換は受け付けておりません。ご了承ください。</li>
+    </ul>
+    <div class="qr-code" id="qr-code"></div>
+    <button id="use-ticket-button" class="btn">使用する</button>
+    <div id="status" class="status">未使用</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
